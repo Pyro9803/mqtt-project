@@ -1,0 +1,6 @@
+services:
+  hivemq:
+    image: hivemq/hivemq-ce
+    ports:
+      - "1883:1883"
+      - "8080:8080"

@@ -1,0 +1,6 @@
+common:
+  automatic-reconnect: true
+  clean-session: true
+  connection-timeout: 30
+  keep-alive-interval: 60
+  max-in-flight: 100
