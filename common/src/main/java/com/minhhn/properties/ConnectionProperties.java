@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 @Data
 @ConfigurationProperties(prefix = "common")
 public class ConnectionProperties {
-    private String automaticReconnect;
-    private String cleanSession;
+    private Boolean automaticReconnect;
+    private Boolean cleanSession;
     private int connectionTimeout;
     private int keepAliveInterval;
     private int maxInFlight;

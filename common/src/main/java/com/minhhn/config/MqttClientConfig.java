@@ -29,8 +29,8 @@ public class MqttClientConfig {
     @Bean
     public MqttConnectOptions createMqttConnectionOptions() {
         MqttConnectOptions options = new MqttConnectOptions();
-        options.setAutomaticReconnect(Boolean.parseBoolean(connectionProperties.getAutomaticReconnect()));
-        options.setCleanSession(Boolean.parseBoolean(connectionProperties.getCleanSession()));
+        options.setAutomaticReconnect(connectionProperties.getAutomaticReconnect());
+        options.setCleanSession(connectionProperties.getCleanSession());
         options.setConnectionTimeout(connectionProperties.getConnectionTimeout());
         options.setKeepAliveInterval(connectionProperties.getKeepAliveInterval());
         options.setMaxInflight(connectionProperties.getMaxInFlight());
